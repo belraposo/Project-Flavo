@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Maven Pro', sans-serif;
+  color: #131313;
+}
+
+body {
+  background-color: #E2C453;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header {
+  margin: 25px 0 10px 0;
+  width: 100%;
+}
+
+nav {
+  background-color: #ffffffc2;
+  margin: 0 auto;
+  padding: 0 12px;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2em;
+}
+
+nav img {
+  width: 22px;
+  cursor: pointer;
+}
+
+nav h2{
+  font-family: 'Bilbo', cursive;
+  font-size: 26px;
+  padding: 4px 0;
+}
+
+h3 {
+  font-weight: 900;
+  padding: 5px 0;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.product-flavo {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+}
+
+.product-flavo img {
+  width: 11.5rem;
+}
+
+.product-price {
+  margin-bottom: 10px;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.product-price h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.product-price h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-left: 6.5rem;
+}
+
+.product-ingredients {
+  width: 95%;
+}
+
+.product-ingredients p, .product-about p {
+  padding-bottom: 10px;
+  width: 95%;
+}
+
+.product-about {
+  width: 95%;
+}
+
+.product-type {
+  padding: 5px 0 15px 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 7.5rem;
+}
+
+.product-type label{
+  cursor: pointer;
+}
+
+.product-type input{
+  display: none;
+  cursor: pointer;
+}
+
+.product-type input + label:before{
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #E2C453;
+  border: 1px solid #131313;
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 4px;
+  margin-bottom: 2px;
+}
+
+.product-type input:checked + label:before{
+  background-color: #131313;
+}
+
+.quantity-cart {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-items {
+  max-width: 30rem;
+  width: 100%;
+  padding: 4px 12px;
+  margin-bottom: 10px;
+  border: 1px solid #131313;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2em;
+}
+
+.add-items p {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.add-items p:nth-child(2) {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.quantity-cart button {
+  background-color: #131313;
+  max-width: 30rem;
+  height: 40px;
+  width: 100%;
+  padding: 4px 12px;
+  color: #ffffff;
+  border: none;
+  border-radius: 2em;
+  font-size: 18px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+@media (min-width: 1366px) {
+  .product-ingredients {
+    text-align: center;
+  }
+
+  .product-about {
+    text-align: center;
+  }
+}
+
+
